@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+    --White: #FFFFFF;
+    --Indigo-400: #818CF8;
+    --Indigo-500: #6366F1;
+	--Indigo-600: #4F46E5;
+	--Blue_Gray-300: #CDB5E1;
+
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0F172A;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0F172A;
+}
+#left {
+  display: flex;
+  align-items: center;
+}
+#trynow{
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+}
+#trynow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#btn-trynow {
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--Indigo-600);
+  color: var(--White);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+}
+.hero {
+  width: 100%;
+  padding: 5rem 2rem;
+  background-color: #0F172A;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline {
+  color: #6366f1;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #fff;
+  max-width: 900px;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  background: #6366f1;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.btn-hero:hover {
+  background: #4f46e5;
+}
+
+.hero-icon {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
