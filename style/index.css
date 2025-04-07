@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+    --White: #FFFFFF;
+    --Indigo-400: #818CF8;
+    --Indigo-500: #6366F1;
+	--Indigo-600: #4F46E5;
+	--Blue_Gray-200: #E2E8F0;
+	--Blue_Gray-300: #CBD5E1;
+	--Blue_Gray-400: #94A3B8;
+    --Blue_Gray-600: #475569;
+    --Blue_Gray-700: #334155;
+    --Blue_Gray-900: #0F172A;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background: #0F172A;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0F172A;
+}
+.wt{
+	color: var(--White);
+}
+.pt{
+	color: var(--Indigo-400);
+}
+.bgt{
+	color: var(--Blue_Gray-300);
+}
+#left {
+  display: flex;
+  align-items: center;
+}
+#trynow{
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+}
+#trynow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#btn-trynow {
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--Indigo-600);
+  color: var(--White);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+}
+.hero {
+  width: 100%;
+  padding: 5rem 2rem;
+  background-color: #0F172A;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline {
+  color: var(--Indigo-400);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--White);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color:var(--Blue_Gray-300);
+  max-width: 900px;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  background: #6366f1;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.btn-hero:hover {
+  background: #4f46e5;
+}
+
+.hero-icon {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+.subhero{
+ display: flex;
+ padding: 5rem;
+ flex-direction: column;
+ align-items: center;
+ gap: 5rem;
+ align-self: stretch;
+ color: var(--Blue_Gray-300);
+ justify-content: center;
+ font-size: 1.7rem;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 110%	;
+}
+.subhero-images{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5rem;
+ align-self: stretch;
+}
+.thirdsection{
+ display: flex;
+ padding: 5rem;
+ align-items: center;
+ gap: 2rem;
+ align-self: stretch;
+ flex-direction: column;
+ flex: 1 0 0;
+}
+h2{
+ font-size: 3.5rem;
+ font-style: normal;
+ line-height: 110%;
+ font-weight: 800;
+ text-align: center;
+ align-self: stretch;
+}
+.thirdsection p{
+ color: var(--Blue_Gray-300);
+ text-align: center;
+ font-family: Roboto;
+ font-size: 1.125rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 160%;
+}
+.fourthsection{
+display: flex;
+width: 100%;
+padding: 5rem;
+align-items: center;
+gap: 5rem;
+align-self: stretch;
+}
+.fourthtext{
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+}
+.fourthtext h3{
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 110%;
+}
+.fourthtext p{
+ font-size: 1.125rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 160%;
+}
+.fourthimages{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-end;
+ gap: 1.5rem;
+ flex: 1 0 0;
+}
+#first-row{
+ display: flex;
+ height: 12rem;
+ padding-left: 3rem;
+ align-items: flex-start;
+ gap: 1.5rem;
+ align-self: stretch;
+}
+#second-row{
+ display: flex;
+ height: 12rem;
+ padding-right: 1.5rem;
+ align-items: flex-start;
+ gap: 1.5rem;
+ align-self: stretch;
+}
+.fifthsection{
+ display: flex;
+ width:100%;
+ padding: 5rem;
+ background-color: var(--Indigo-600);
+}
+.fifthsection h3{
+ color: var(--White);
+ text-align: center;
+ font-size: 3rem;
+ font-style: normal;
+ font-weight: 800;
+ line-height: 110%; 
+}
+
+
+footer{
+ background-color: var(--Blue_Gray-700);
+ color: var(--Blue_Gray-200);
+ display: flex;
+ padding: 1.5rem 5rem;
+ align-items: center;
+ gap: 2rem;
+ align-self: stretch;
+}
+a{
+	text-decoration: none;
+
+}
+.links{
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+ flex: 1 0 0;
+}
