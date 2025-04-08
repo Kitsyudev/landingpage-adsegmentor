@@ -6,12 +6,13 @@
     --White: #FFFFFF;
     --Indigo-400: #818CF8;
     --Indigo-500: #6366F1;
-	--Indigo-600: #4F46E5;
-	--Blue_Gray-200: #E2E8F0;
-	--Blue_Gray-300: #CBD5E1;
-	--Blue_Gray-400: #94A3B8;
+	  --Indigo-600: #4F46E5;
+	  --Blue_Gray-200: #E2E8F0;
+	  --Blue_Gray-300: #CBD5E1;
+	  --Blue_Gray-400: #94A3B8;
     --Blue_Gray-600: #475569;
     --Blue_Gray-700: #334155;
+    --Blue_Gray-800: #1E293B;
     --Blue_Gray-900: #0F172A;
 }
 body {
@@ -218,13 +219,6 @@ align-self: stretch;
  gap: 1.5rem;
  flex: 1 0 0;
 }
-.row{
-  display: flex;
-  height: 18rem;
-  align-items: flex-start;
-  gap: 1.5rem;
-  align-self: stretch;
-}
 #first-row{
  display: flex;
  height: 12rem;
@@ -265,10 +259,16 @@ align-self: stretch;
 .sixth-images{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
-  flex: 1 0 0;
+}
+
+.row{
+ display: flex;
+ height: 18rem;
+ align-items: flex-start;
+ gap: 1.5rem;
+ align-self: flex-start;
 }
 .sixth-text{
   display: flex;
@@ -310,11 +310,9 @@ ul{
 }
 .seventh-text{
   display: flex;
-  padding: 5rem 0rem;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 3rem;
   flex: 1 0 0;
 }
 .column{
@@ -341,7 +339,69 @@ ul{
   font-weight: 400;
   line-height: 160%;
 }
+.eighthsection{
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  gap: 5rem;
+  align-self: stretch;
+}
+.border{
+  display: flex;
+  padding: 4rem 0rem 4rem 4rem;
+  align-items: flex-start;
+  flex: 1 0 0;
+  border-radius: 1.25rem;
+  border: 1px solid var(--Blue_Gray-600);
+}
+h5{
+  color: var(--White);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+.eighthsection p{
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.gray-button{
+  display: flex;
+  width: 18rem;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Blue_Gray-600);
+  background: var(--Blue_Gray-700);
 
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.03125rem;
+  color: var(--White);
+}
+.ninthsection{
+  display: flex;
+  padding: 5rem 0rem 0rem 5rem;
+  align-items: center;
+  gap: 5rem;
+  align-self: stretch;
+  background: var(--Blue_Gray-800);
+}
+.ninthtext{
+  display: flex;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
 
 footer{
   background-color: var(--Blue_Gray-700);
