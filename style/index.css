@@ -55,7 +55,7 @@ header{
   align-items: center;
 }
 
-#btn-trynow {
+.btn-trynow {
   border-radius: 0.5rem;
   border: none;
   background: var(--Indigo-600);
@@ -218,6 +218,13 @@ align-self: stretch;
  gap: 1.5rem;
  flex: 1 0 0;
 }
+.row{
+  display: flex;
+  height: 18rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
 #first-row{
  display: flex;
  height: 12rem;
@@ -248,24 +255,126 @@ align-self: stretch;
  font-weight: 800;
  line-height: 110%; 
 }
+.sixthsection{
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  gap: 5rem;
+  align-self: stretch;
+}
+.sixth-images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+.sixth-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+.sixth-text p{
+  color: var(--Blue_Gray-300);
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ul{
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.row img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.seventhsection{
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  gap: 5rem;
+  align-self: stretch;
+}
+.seventh-text{
+  display: flex;
+  padding: 5rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+}
+.seventh-text p{
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
 
 
 footer{
- background-color: var(--Blue_Gray-700);
- color: var(--Blue_Gray-200);
- display: flex;
- padding: 1.5rem 5rem;
- align-items: center;
- gap: 2rem;
- align-self: stretch;
+  background-color: var(--Blue_Gray-700);
+  color: var(--Blue_Gray-200);
+  display: flex;
+  padding: 1.5rem 5rem;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
 }
 a{
 	text-decoration: none;
 
+}
+.about{
+ font-size: 1rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 140%;
 }
 .links{
  display: flex;
  align-items: center;
  gap: 2rem;
  flex: 1 0 0;
+ font-size: 1rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 140%;
+}
+.social-links{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
 }
