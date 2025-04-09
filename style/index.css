@@ -377,6 +377,7 @@ h5{
   border-radius: 0.5rem;
   border: 1px solid var(--Blue_Gray-600);
   background: var(--Blue_Gray-700);
+  cursor: pointer;
 
   font-size: 1.25rem;
   font-style: normal;
@@ -524,13 +525,15 @@ h5{
 }
 .endtext p{
   text-align: center;
-  
+
 }
+
 
 footer{
   background-color: var(--Blue_Gray-700);
   color: var(--Blue_Gray-200);
   display: flex;
+  width: 100%;
   padding: 1.5rem 5rem;
   align-items: center;
   gap: 2rem;
@@ -538,7 +541,9 @@ footer{
 }
 a{
 	text-decoration: none;
-
+}
+a :visited{
+  text-decoration: none;
 }
 .about{
  font-size: 1rem;
@@ -547,6 +552,7 @@ a{
  line-height: 140%;
 }
 .links{
+ color: var(--Blue_Gray-400);
  display: flex;
  align-items: center;
  gap: 2rem;
@@ -555,6 +561,10 @@ a{
  font-style: normal;
  font-weight: 400;
  line-height: 140%;
+}
+.links a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: var(--Blue_Gray-200);
 }
 .social-links{
  display: flex;
