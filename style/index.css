@@ -416,7 +416,7 @@ h5{
 }
 .tenthsection{
   display: flex;
-  width: 90rem;
+  width: 100%;
   padding: 5rem;
   flex-direction: column;
   align-items: center;
@@ -440,82 +440,92 @@ h5{
 }
 
 .slider-container {
-  position: relative;
-  overflow: hidden;
-  margin-top: 30px;
-}
-
-.slider {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  gap: 1.5rem;
   overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 1rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  padding: 1rem 0;
 }
 
 .card {
-  min-width: 300px;
-  max-width: 300px;
-  background-color: var(--Blue_Gray-700);
-  border-radius: 12px;
-  padding: 20px;
-  flex-shrink: 0;
   display: flex;
+  width: 24rem;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid var(--Blue_Gray-600);
+  background-color: var(--Blue_Gray-700);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .company {
-  font-weight: bold;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.company img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.company h6 {
+  color: var(--Blue_Gray-400);
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .text {
-  font-size: 14px;
-  color: #ddd;
+  color: var(--White);
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 
 .user {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 1rem;
 }
 
 .user img {
-  width: 32px;
-  height: 32px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
-.nav-buttons {
-  margin-top: 20px;
+.user span {
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 500;
 }
-
-.nav-buttons button {
-  background: none;
-  border: 1px solid #ccc;
-  color: white;
-  padding: 6px 12px;
-  margin: 0 5px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.nav-buttons button:hover {
-  background-color: #1B263B;
-}
-.container-slider{
+.endclass{
   display: flex;
-  width: 24rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 1.25rem;
-  border: 1px solid var(--Blue-Gray-600);
-  background: var(--Blue-Gray-700);
+  padding: 5rem 5rem 10rem 5rem;
+  align-items: center;
+  gap: 5rem;
+  align-self: stretch;
 }
-
+.endtext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex: 1 0 0;
+}
+.endtext p{
+  text-align: center;
+  
+}
 
 footer{
   background-color: var(--Blue_Gray-700);
